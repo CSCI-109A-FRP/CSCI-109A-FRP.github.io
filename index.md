@@ -32,7 +32,7 @@ permalink: /
 <div id="container"/>
 <div id="tooltip"/>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-composite-projections/1.0.1/d3-composite-projections.min.js"></script>
 <script>
 var width = 960,
