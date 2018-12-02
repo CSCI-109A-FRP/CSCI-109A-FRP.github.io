@@ -47,7 +47,7 @@ var svg = d3.select("#container").append("svg")
   .attr("height", height);
 
   var t = d3.transition();
-d3.json("us_congressional_districts.json", function(error, us) {
+d3.json("us_house_results_map.json", function(error, us) {
 var us = topojson.feature(us, us.objects.us_congressional_districts);
 svg.selectAll(".region")
     .data(us.features)
@@ -56,10 +56,15 @@ svg.selectAll(".region")
     .attr("class", "region")
     .attr("d", path)
     .style("fill", function(d){
-      if(d.properties.PARTY_AFF=="Democrat")
-        return "#45aaf2";
-      else
-        return "#ff2f2f";})
+      console.log('Alpha:', d.properties.alpha);
+      if(d.properties.PARTY_AFF=="Democrat") {
+        return `rgba(69, 170, 242, ${d.properties.alpha})`;
+      } else if (d.properties.PARTY_AFF=="Republican") {
+        return `rgba(255, 47, 47, ${d.properties.alpha})`;
+      } else {
+        return "#efefef";
+      }
+    })
     .style("stroke", "#000")
     .style("stroke-width", "0.3px")
     .on("mouseover", function(d){
@@ -71,7 +76,7 @@ svg.selectAll(".region")
         .style("left", x + "px")
         .style("top", y + "px")
         .style("opacity", 1)
-        .html( d.properties.STATE + " dist: " + d.properties.CONG_DIST + "<br/>" +d.properties.CONG_REP + "<br/>" + d.properties.PARTY_AFF );
+        .html( d.properties.STATE + " dist: " + d.properties.CONG_DIST + "<br/>" +d.properties.PARTY_AFF + "<br/>Chance of winning:" + (d.properties.alpha !== 'NaN' ? d.properties.alpha.toFixed(2) : 'NaN') );
       })
       .on("mouseout", function(){
         //Hide the tooltip
