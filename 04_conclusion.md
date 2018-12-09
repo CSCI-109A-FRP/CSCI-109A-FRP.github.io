@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Home
-permalink: /
+title: Conclusion
+permalink: /conclusion
 ---
+
 <style>
 #container {
   text-align: center;
