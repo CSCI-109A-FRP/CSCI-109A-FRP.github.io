@@ -57,7 +57,6 @@ svg.selectAll(".region")
     .attr("class", "region")
     .attr("d", path)
     .style("fill", function(d){
-      console.log('Alpha:', d.properties.alpha);
       if(d.properties.PARTY_AFF=="Democrat") {
         return `rgba(69, 170, 242, ${d.properties.alpha})`;
       } else if (d.properties.PARTY_AFF=="Republican") {
