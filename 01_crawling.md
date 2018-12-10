@@ -45,7 +45,7 @@ Wikipedia is a great collaborative knowledge base but sometime it lakes of struc
 This is why in some edge-cases, the crawler didn't do a good job or the data. On the other hand, the data was particularly messy sometimes. For example, we found that for some elections there was more than 1 winner or even none or duplicate candidates. We had to write some test to detect such errors and then we manually fixed them.  
 
 # Part 3 - Data derivation
-With the data at hand, we was able to derivate the following new predictors:  
+With the data at hand, we were able to derivate the following new predictors:  
 
 - Whether this is a presidential year or not
 - Whether the president can stand for re-election
