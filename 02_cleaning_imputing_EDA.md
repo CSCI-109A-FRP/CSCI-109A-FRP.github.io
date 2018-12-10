@@ -4,11 +4,9 @@ title: EDA
 permalink: /eda
 ---
 
-# Data sources and crawling
-The first step was to identify the data we will need to predict the elections results at district level, then, to identify where to find this data and finally, write crawlers when necessary.
-Election results: This data was available in the official states websites on different format across the states and years. It would have been way too long to reconcile all of them. The needed data  are also available on some websites like Wikipedia.org and Ballotpedia.org. It was a good tradeoff between ease of extraction and accuracy. But many times we faced the situation that the data quality was bad and we even had to add data manually.
+We extracted data for 20 variables which built the basis for the Exploratory Data Analysis. All together we had 9974 observations.  
 
-# Variable description
+These are the variables we used for our analysis:
 
 - **won**: Response variable. 1 if the candidate won, 0 otherwise
 - **district**: Congressional districts name
@@ -31,8 +29,18 @@ Election results: This data was available in the official states websites on dif
 - **last_house_majority**: Which party have the majority (R or D)
 - **fundraising**: How much money does the candidate raised for the campaign
 
-# Data cleaning
-The biggest effort was to collect data from many different sources like websites, pdf, excel and csv files. The challenge was to get the all data for the baseline to the same aggregation level. Especially it was difficult to get data on district level. Details are described in the page for crawling. Even after extensive data imputation we had some missing values (or NaNs):
+Our data for the training set will be all data excluding the year 2018. The test set will be restricted to the year 2018 only. Both datasets are very good balanced regarding the values in the response variable:  
+
+<div style="text-align: center;">
+  <img src="/assets/02/02-EDA-balance.png" alt="EDA balance" title="EDA balance" />
+</div>
+<br />
+
+So we don’t need to resample data, stratify or generate any synthetic samples.
+
+# Data imputation
+
+The first data quality corrections were already done when extracting the data from the different sources. Sometimes we faced the situation that the data quality was bad and we even had to add data manually. With the final preparation of the data we had to deal with the remaining missing values. The solution for most of the missing values was to group the data for state, district and/or year and take the mean. This is the result of the data imputation process. This table shows where we had missing values and how we corrected them:  
 
 <table>
   <thead>
@@ -167,14 +175,50 @@ The biggest effort was to collect data from many different sources like websites
   </tbody>
 </table>
 
-For the remaining 172 NaN entries for fundraising we dropped the lines to have a clean dataset.
+The reason for most of these NaN values was because some observations go back to the year 1824 where many information was not yet available. Beside mean imputation we also implemented a function with the possibility for **model based imputation**. But when testing with the classification models we didn't see any improvements so we kept the mean imputation method.  
 
 # Variable selection
-Here we used the scatterplot matrix to find out which variables will be important for the baseline and give us insights about their relevance.  
+We are only using 20 variables in our dataset so a dimension reduction was not that important but for the modeling part we wanted to know about the feature importance.  
 
-Looking for correlations between continuous variables, we have dropped some of the discrete variables from the plot as well as combine some others together. Its difficult to display in a readable format in this word document but it can be seen anyway in the notebook.  
+We used **7 category variables** including the response variable. To test if there is a significant relationship between a predictor variable and the response variable we used the **Chi-Square test**:  
 
-First, we differentiated the observations by the “won” factors:
+The printed result was this:
+
+- Important for the prediction model: president_party (p-value: +0.231, chi2: +2.9)
+- Important for the prediction model: state (p-value: +1.000, chi2: +18.5)
+- Important for the prediction model: district (p-value: +1.000, chi2: +15.3)
+- Important for the prediction model: last_house_majority (p-value: +0.933, chi2: +0.0)
+- **NOT** important for the prediction model: **name** (p-value: +0.000, chi2: +9938.0)
+
+At the end we could not simply remove the variable “name” from the variable set at this point because it was needed for feature engineering which was done in the modeling part.  
+
+To get a sense about the feature importance we used a Random Forest model with one-hot-coding. This method was then also used in the modeling part to decide which variables can be dropped. Variables like state or district for which we had to create dummy variables got a lower feature importance value because they were distributed over several columns.   
+
+These are the first 20 variables sorted by importance:  
+
+1. (0.128, 'percent'),
+2. (0.122, 'votes'),
+3. (0.092, 'fundraising'),
+4. (0.053, 'unemployement_rate'),
+5. (0.050, 'first_time_elected'),
+6. (0.040, 'year'),
+7. (0.031, 'last_D_house_seats'),
+8. (0.030, 'last_R_house_seats'),
+9. (0.024, 'count_victories'),
+10. (0.022, 'president_overall_avg_job_approval'),
+11. (0.015, 'state_California'),
+12. (0.014, 'is_incumbent'),
+13. (0.0128, 'won'),
+14. (0.011, 'district_District 1'),
+15. (0.011, 'is_presidential_year'),
+16. (0.011, 'district_District 2'),
+17. (0.009, 'district_District 4'),
+18. (0.009, 'state_Texas'),
+19. (0.009, 'district_District 3'),
+20. (0.008, 'state_New York'),
+
+Also we used the scatterplot matrix to find out which variables will be important and give us insights about their relevance. During the EDA phase we also experimented already with combining some variables so this is just one of the examples we analyzed.
+Here we differentiated the observations by the “won” factors:  
 
 ![Variable selection](/assets/02/02_variable_selection_01.png)
 
@@ -195,35 +239,22 @@ Still we can’t see clear linear correlations or patterns, although we notice t
 - For a higher unemployment rate, Democrats win more than Republicans
 - Democrat winners raise slightly less funds than Republican winners
 
-The variable correlation, when the Republicans won, is summarized for Republicans in this table:
+Further we created heat map matrices that give us insights about correlations between the continuous variables. In the plots we differentiated if Democrats or Republicans won.
+This matrix shows the correlations when the Democrats won together with a colorbar on the right side:  
 
-![Variable selection](/assets/02/02_variable_selection_03.png)
+![Variable selection](/assets/02/02-EDA-corr_D.png)
 
-This is the same table for the Democrats:
+This matrix shows the correlations when the Republicans won:  
 
-![Variable selection](/assets/02/02_variable_selection_04.png)
+![Variable selection](/assets/02/02-EDA-corr_R.png)
 
-We can see that the strength of the relationships between Democrats and Republicans is very often similar. In general its weak relationships with only 3 correlation values above 0.7. We also wanted to know about the spread of the data and how the values for Democrats and Republicans compare to each other so we created some boxplots to show this:
+We can see that the strength of the relationships between Democrats and Republicans is very often similar. As expected, the correlations between the variables percent, votes and won will be high.  
+We also wanted to know about the spread of the data and how the values for Democrats and Republicans compare to each other so we created some boxplots to show this:  
 
-![Variable selection](/assets/02/02_variable_selection_05.png)
+![Variable selection](/assets/02/02-EDA-boxpl.png)
 
-Above plots were created with function “expl_boxplots(dataframe,variables).
+In the modeling phase we will use this information from the EDA phase to be able to create features that improve the model performance and concentrate on the most important features.  
 
-# Baseline model
-The baseline will be to predict the response variable “won” per each district.   
-
-The observations of the 2018 election will be our test set, while the previous elections will be our training set.
-
-We start with a simple Logistic Regression model, cross-validated over 5 folds.
-
-For the moment we simply drop the rows containing NaN and see what is the result. The resulting predictions reach an accuracy of 96% over the training set and 94% over the test set. Unfortunately, after dropping the rows containing NaNs, we have only 292 districts.
-
-In this case, though, the number of observations to predict is fixed and known a priori: it’s 435 districts.
-
-That’s important because from its majority will depend the power at the House of Representative.
-
-So, in the next phase we will do imputation of NaN values, to make sure that in each district we will have a prediction.
-
-For the moment, we can add a complementary method, to have a simple prediction for each district, by just taking the max occurring winner per each district before 2018.
-
-If we compare that to the actual election results in 2018, we get 77% accuracy.
+# Baseline
+For the Baseline model we created a very simple data model to check if we have a promising set of features. We used a simple prediction for each district, by just taking the max occurring winner per each district before 2018. Compared to the actual election results in 2018, we get **77% accuracy**.  
+So we are confident to be able to create good models in the modeling phase
