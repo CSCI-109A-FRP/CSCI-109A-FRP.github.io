@@ -114,22 +114,24 @@ Comparing predictions with actual results:
   <tbody>
     <tr>
       <th>N. Democrat districts</th>
-      <td>186</td>
+      <td>190</td>
       <td>230</td>
       <td>194</td>
     </tr>
     <tr>
-      <th>N. Democrat districts</th>
-      <td>249</td>
+      <th>N. Republican districts</th>
+      <td>245</td>
       <td>205</td>
       <td>241</td>
     </tr>
   </tbody>
 </table>
 
-Looking the actual results we notice how all those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means our model is slightly biased towards republicans. Looking at the situation before elections we notice how it has a tendency to confirm candidates which are running for re-election.  
+Looking the actual results we notice how 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means our model is slightly biased towards republicans. Looking at the situation before elections we notice how it has a tendency to confirm candidates which are running for re-election.  
 
-The fact that our simple baseline model has an accuracy of 76.8% tells a lot about partisanship: several districts stick with the same party for long time.   
+![Modeling](/assets/04/04-Visualizations-PredVSActual.png)
+
+The fact that our simple baseline model has an accuracy of 76.8% tells a lot about partisanship: several districts stick with the same party for long time.  
 
 # Features
 
@@ -137,13 +139,14 @@ As we would expect, some of the electorate behaviors are seen in the data. The i
 Some of the interaction terms and engineered features got high scores in the models. For example the `Log10fundraising` and `ownPartisan`.  
 On the other hand, it was surprising to see how some features which we would expect having great importance, were getting a low or not so high score in the models. For example the party of the president and the seats ratio of the candidate's party in the House of representative.  
 In fact, during midterm elections the president usually loses seats in the House of Representative. We have to work to see how to translate in terms of statistical behavior what we know it is a natural electorate behavior.  
-The data quality and collinearity of some features have certainly a big impact over those ones.
-
+The data quality and collinearity of some features have certainly a big impact over those ones.  
 After having ran several different configurations, we saw how dropping some collinear features like `first_time_elected` or `count_victories` could bring to a more neutral model, but reduced the cross-validation scores overall.  
+
+![Modeling](/assets/04/04_featureImportance.png)
 
 # Choosing the training data
 
-We also noticed how selecting the training data influenced the model performances. Taking only midterm years as training set was improving the score of our boosting model against the others, while including also the presidential years was giving random forests as best, with also better stacking. So  
+We also noticed how selecting the training data influenced the model performances. Taking only midterm years as training set was improving the score of our boosting model against the others, while including also the presidential years was giving random forests as best, with also better stacking. So we decided to keep both presidential and midterm years in the training set, even though the validation folds are only midterms.  
 
 ## Future improvements
 
