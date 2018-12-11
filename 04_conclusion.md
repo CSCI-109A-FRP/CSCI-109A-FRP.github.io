@@ -199,8 +199,6 @@ svg
 
 <br />
 
-The above map represents the geographical distribution of all 435 congressional districts of the 115th United States Congress, according to the last modifications of 2018 Remedial Congressional Districts.  
-
 # Predictions score
 Our final predictions for 2018 data reached an accuracy of 89.89%.  
 On a total of 435 districts, we predicted correctly 391 and mispredicted 44.  
