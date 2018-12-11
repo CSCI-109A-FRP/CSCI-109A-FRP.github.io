@@ -38,7 +38,7 @@ We extracted the number of seats by party and by year from the following Wikiped
 
 ## 1.5 Candidate fundraising
 We got the candidate fundraising data from from 2009 to 2018 on followthemoney.org.  
-The candidate names are not formated the same way as our data from Wikipedia and Ballotpedia so we used a fuzzy search algorithm to match them
+The candidate names are not formatted in the same way as our data from Wikipedia and Ballotpedia, so we used a fuzzy search algorithm to match them
 
 # Part 2 - Detect and manually fix errors and add missing results
 Wikipedia is a great collaborative knowledge base but sometimes it lakes of structure.
