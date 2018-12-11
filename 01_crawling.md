@@ -4,7 +4,7 @@ title: Data Crawling
 permalink: /data-crawling
 ---
 
-> You can download a copy of the code described in this page [here](/assets/notebooks/01_crawler.ipynb) as an ipython notebook
+> You can download a copy of the code described in this page as an [ipython notebook](/assets/notebooks/01_crawler.ipynb) or a <a href="/assets/pdf_notebooks/01_crawler.pdf" target="_blank">pdf</a>
 
 # Part 1 - Data crawling
 

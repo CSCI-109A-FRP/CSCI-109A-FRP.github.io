@@ -3,7 +3,7 @@ layout: page
 title: Modeling
 permalink: /modeling
 ---
-> You can download a copy of the code described in this page [here](/assets/notebooks/03_Modeling.ipynb) as an ipython notebook
+> You can download a copy of the code described in this page as an [ipython notebook](/assets/notebooks/03_Modeling.ipynb) or a <a href="/assets/pdf_notebooks/03_Modeling.pdf" target="_blank">pdf</a>
 
 The main steps we went through for generating our predictions can be split as:  
 
@@ -14,7 +14,7 @@ The main steps we went through for generating our predictions can be split as:
 - Stacking multiple models
 
 For the modeling part we created a dedicated notebook called “03-Modeling.ipynb”. On this page we will describe our modeling process by referring to functions and other coding elements defined there.
-  
+
 
 ## Load data
 
@@ -206,7 +206,7 @@ That last score type is the one we aim to optimize, as our purpose is to predict
 
 As random forest is our best model, we select features using the `var_sel_RF_2` function, which is a slight variation of the `var_sel_RF` function from the EDA phase. The main difference is that we don't need to split the dataset inside the function but we provide the datasets directly as inputs.  
 
-Here we run feature importance for each fold from Midterm_recent_years and then show their averages: 
+Here we run feature importance for each fold from Midterm_recent_years and then show their averages:
 
 ![Modeling](/assets/03/03_featureImportance.png)
 

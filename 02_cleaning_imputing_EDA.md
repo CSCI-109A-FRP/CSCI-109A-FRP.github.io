@@ -4,7 +4,7 @@ title: Exploratory Data Analysis
 permalink: /eda
 ---
 
-> You can download a copy of the code described in this page [here](/assets/notebooks/02_EDA.ipynb) as an ipython notebook
+> You can download a copy of the code described in this page as an [ipython notebook](/assets/notebooks/02_EDA.ipynb) or a <a href="/assets/pdf_notebooks/02_EDA.pdf" target="_blank">pdf</a>
 
 We extracted data for 20 variables which built the basis for the Exploratory Data Analysis. All together we had 9974 observations.  
 
