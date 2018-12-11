@@ -249,7 +249,7 @@ After having ran several different configurations, we saw how dropping some coll
 
 # Choosing the training data
 
-We also noticed how selecting the training data influenced the model performances. Taking only midterm years as training set was improving the score of our boosting model against the others, while including also the presidential years was giving random forests as best, with also better stacking. So we decided to keep both presidential and midterm years in the training set, even though the validation folds are only midterms.  
+We also noticed how selecting the training data influenced the model performances. Taking only midterm years as training set was improving the score of our boosting model against the others, while including also the presidential years was giving random forests as best, with also better stacking. So we decided to keep both presidential and midterm years in the training set, though keeping the validation folds as only midterms.  
 
 ## Future improvements
 
