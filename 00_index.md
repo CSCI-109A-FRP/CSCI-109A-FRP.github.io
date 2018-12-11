@@ -5,7 +5,9 @@ permalink: /
 ---
 <img src="https://www.extension.harvard.edu/sites/extension.harvard.edu/themes/extension/logo.png" alt="Harvard Extension School" style="max-width: 200px;" />
 
-_Fulvio Di Napoli, Robert Anglberger and Pierre Mary_
+_Fulvio Di Napoli, Robert Anglberger and Pierre Mary, Group #11_
+
+# Forecasting the race for the House
 
 <style>
 #container {
@@ -30,6 +32,31 @@ _Fulvio Di Napoli, Robert Anglberger and Pierre Mary_
   pointer-events: none;
   border-radius:5px;
   transition: .2s;
+}
+.legend-container {
+  margin-top: 15px;
+  text-align: center;
+}
+.legend {
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  float: left;
+}
+.d-legend {
+  background: rgba(69, 170, 242, 1);
+}
+.r-legend {
+  background: rgba(255, 47, 47, 1);
+}
+.legend-title {
+  float: left;
+  margin-left: 5px;
+  line-height: 20px;
+}
+.legend-block {
+  padding-right: 10px;
+  display: inline-block;
 }
 </style>
 
@@ -97,7 +124,26 @@ svg
 });
 
 </script>
+
+<div class="legend-container">
+  <div class="legend-block">
+    <div class="legend d-legend"></div> <span class="legend-title">Democrat</span>
+  </div>
+  <div class="legend-block">
+    <div class="legend r-legend"></div> <span class="legend-title">Republican</span>
+  </div>
+
+  <p style="font-weight: 600; font-style: italic;">
+    Our forecast for every district<br />
+    The chance of each candidate winning in all 435 House districts
+  </p>
+</div>
+
 <br />
+
+>
+>
+
 <p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
 
 # Problem Statement
