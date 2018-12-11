@@ -195,7 +195,7 @@ svg
 
 <br />
 
-<p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
+<p>In this project we want to predict the winning party at the district level for the 2018 congressional Mid-term elections.</p>
 
 <p>Above see the map with a preview of our [conclusions] (https://csci-109a-frp.github.io/conclusion) for the 2018 congressional elections.</p>
 
