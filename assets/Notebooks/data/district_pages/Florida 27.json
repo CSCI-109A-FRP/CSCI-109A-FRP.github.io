@@ -1,0 +1,51 @@
+[
+  {
+    "year": "2012",
+    "candidate_party": "Republican",
+    "candidate_name": "Ileana Ros-Lehtinen",
+    "votes": 138488,
+    "percent": 60.2
+  },
+  {
+    "year": "2012",
+    "candidate_party": "Democratic",
+    "candidate_name": "Manny Yevancey",
+    "votes": 85020,
+    "percent": 36.9
+  },
+  {
+    "year": "2014",
+    "candidate_party": "Republican",
+    "candidate_name": "Ileana Ros-Lehtinen",
+    "votes": 0,
+    "percent": 100
+  },
+  {
+    "year": "2016",
+    "candidate_party": "Republican",
+    "candidate_name": "Ileana Ros-Lehtinen",
+    "votes": 157917,
+    "percent": 54.9
+  },
+  {
+    "year": "2016",
+    "candidate_party": "Democratic",
+    "candidate_name": "Scott Fuhrman",
+    "votes": 129760,
+    "percent": 45.1
+  },
+  {
+    "year": "2018",
+    "candidate_party": "Republican",
+    "candidate_name": "Maria Elvira Salazar",
+    "votes": 112638,
+    "percent": 45.8
+  },
+  {
+    "year": "2018",
+    "candidate_party": "Democratic",
+    "candidate_name": "Donna Shalala",
+    "votes": 127144,
+    "percent": 51.7
+  }
+]

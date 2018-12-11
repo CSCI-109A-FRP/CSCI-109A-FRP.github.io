@@ -1,0 +1,58 @@
+[
+  {
+    "year": "2012",
+    "candidate_party": "Republican",
+    "candidate_name": "David Rivera",
+    "votes": 108820,
+    "percent": 43
+  },
+  {
+    "year": "2012",
+    "candidate_party": "Democratic",
+    "candidate_name": "Joe Garcia",
+    "votes": 135694,
+    "percent": 53.6
+  },
+  {
+    "year": "2014",
+    "candidate_party": "Republican",
+    "candidate_name": "Carlos Curbelo",
+    "votes": 83031,
+    "percent": 51.5
+  },
+  {
+    "year": "2014",
+    "candidate_party": "Democratic",
+    "candidate_name": "Joe Garcia",
+    "votes": 78306,
+    "percent": 48.5
+  },
+  {
+    "year": "2016",
+    "candidate_party": "Republican",
+    "candidate_name": "Carlos Curbelo",
+    "votes": 148547,
+    "percent": 53
+  },
+  {
+    "year": "2016",
+    "candidate_party": "Democratic",
+    "candidate_name": "Joe Garcia",
+    "votes": 115493,
+    "percent": 41.2
+  },
+  {
+    "year": "2018",
+    "candidate_party": "Republican",
+    "candidate_name": "Carlos Curbelo",
+    "votes": 113326,
+    "percent": 49.3
+  },
+  {
+    "year": "2018",
+    "candidate_party": "Democratic",
+    "candidate_name": "Debbie Mucarsel-Powell",
+    "votes": 116626,
+    "percent": 50.7
+  }
+]
