@@ -13,7 +13,8 @@ The main steps we went through for generating our predictions can be split as:
 - Improving prediction accuracy
 - Stacking multiple models
 
-Around those main steps are other activities, like definition of functions, plots and other.  
+For the modeling part we created a dedicated notebook called “03-Modeling.ipynb”. On this page we will describe our modeling process by referring to functions and other coding elements defined there.
+  
 
 ## Load data
 
@@ -23,7 +24,7 @@ We start from loading the dataset after data imputation.
 
 We define our baseline model by simply taking the party, per each district, with the highest winning rate.  
 
-Here we have defined `winnerFilter_` and `baselineTrain_`. The only difference with the `winnerFilter` and `baselineTrain` defined in 02-EDA phase is that here we refer to parties as 1 and 0, instead than as 'R' and 'D'.  
+Here we have defined `winnerFilter_` and `baselineTrain_`. The only difference with the `winnerFilter` and `baselineTrain` defined in the 02_EDA.ipynb notebook is that here we refer to parties as 1 and 0, instead than as 'R' and 'D'.  
 
 We prepare a dictionary `results` containing the winner parties of each year, grouped by state and district.  
 
@@ -39,7 +40,7 @@ This will be the term of comparison for all next models.
 
 ## Functions definitions
 
-Now we start to define a certain amount of functions, to get the code as more modular and clean as possible.  
+Now we start to define a certain amount of functions, to get the code as modular and clean as possible.  
 
 We define a function `splitDf` for splitting the dataset:  
 
@@ -79,7 +80,7 @@ This is a model by itself, with a train step and a predict step. When using this
 
 ### Design features, drop features
 
-In the `designFeatures` function we applied mathematical transformations, convert strings to numbers, produced an amount of interaction terms, fixed a bug in the `first_time_elected` feature.  
+In the `designFeatures` function we applied mathematical transformations, convert strings to numbers, produced an amount of interaction terms and fixed a bug in the `first_time_elected` feature.  
 
 The partisanship function gives an indication in case a district is traditionally tied to a party rather than the other.  
 
@@ -137,7 +138,7 @@ Then we select for which years we want to perform cross-validation. We take the 
 
 ### The model list
 
-Here we define a model list in form of list of dictionaries.  
+Here we define a model list in form of a list of dictionaries.  
 The fact to use list of dictionaries will structure better the models, increase consistency and make our life easier when accessing, updating, plotting any data related to those models.  
 The models have been selected after several iterations on different model types and configurations.  
 Also, having stacking in mind, we want to use models that are not similar to one another:  
