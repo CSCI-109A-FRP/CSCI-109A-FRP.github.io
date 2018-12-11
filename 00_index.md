@@ -223,7 +223,7 @@ Both houses of Congress are currently controlled by the Republican Party, which 
 The Democrats think they can win control of the House of Representatives this year by winning a majority of seats.
 If the Democrats want to take control of the House by having the most seats, they’re going to have to claim at least 23 from the Republicans.
 
-# Challenge
+# Challenges
 
 ## Data quality challenges
 
