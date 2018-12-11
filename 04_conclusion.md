@@ -232,7 +232,7 @@ Comparing predictions with actual results:
 </table>
 
 Looking the actual results we notice how 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means our model is slightly biased towards republicans. Looking at the situation before elections we notice how it has a tendency to confirm candidates which are running for re-election.  <br />
-The plot above shows 435 round markers, one marker per each district: the position of the markers through the x axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile of markers. The blue or red color of the marker refers to the actual result of the elections: red for Republicans, blue for Democrats.
+The plot below shows 435 round markers, one marker per each district: the position of the markers through the x axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile of markers. The blue or red color of the marker refers to the actual result of the elections: red for Republicans, blue for Democrats.
 
 ![Modeling](/assets/04/04-Visualizations-PredVSActual.png)
 
