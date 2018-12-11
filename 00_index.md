@@ -197,7 +197,7 @@ svg
 
 <p>In this project we want to predict the winning party at the district level for the 2018 congressional Mid-term elections.</p>
 
-Above see the map with a preview of our [conclusions](/conclusion) for the 2018 congressional elections.
+Above see the map with a preview of our [conclusions](/conclusion).
 
 # Problem Statement
 
