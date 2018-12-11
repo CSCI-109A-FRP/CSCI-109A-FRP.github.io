@@ -25,23 +25,23 @@ Then, we extracted the congressional election results from each of these distric
 
 ### 1.1.2 Ballotpedia
 The 2018 house results was not available on Wikipedia so we had to found another source: Ballotpedia.
-On this websites we was able to retrieve the historical results by district from 2012 to 2018.  
+On this websites we were able to retrieve the historical results by district from 2012 to 2018.  
 
 ## 1.2 National unemployement rates
 We downloaded the national unemployement rate from 1948 to 2018 by month from the [Bureau of Labor Statistics](https://data.bls.gov) website.  
 
 ## 1.3 Presidental job approval
-We was able to scrap the informations used by Gallup to build [this page](https://news.gallup.com/interactives/185273/presidential-job-approval-center.aspx).
+We were able to scrap the informations used by Gallup to build [this page](https://news.gallup.com/interactives/185273/presidential-job-approval-center.aspx).
 
 ## 1.4 House seats repartition
-We extracted the number of seats by party by year from the following Wikipedia page: [List of United States House of Representatives elections, 1856–present](https://en.wikipedia.org/wiki/List_of_United_States_House_of_Representatives_elections,_1856%E2%80%93present)
+We extracted the number of seats by party and by year from the following Wikipedia page: [List of United States House of Representatives elections, 1856–present](https://en.wikipedia.org/wiki/List_of_United_States_House_of_Representatives_elections,_1856%E2%80%93present)
 
 ## 1.5 Candidate fundraising
 We got the candidate fundraising data from from 2009 to 2018 on followthemoney.org.  
-The candidate names are not formated the same way as our data from Wikipedia and Ballotpedia so used a fuzzy search algorithm to match them
+The candidate names are not formatted in the same way as our data from Wikipedia and Ballotpedia, so we used a fuzzy search algorithm to match them
 
 # Part 2 - Detect and manually fix errors and add missing results
-Wikipedia is a great collaborative knowledge base but sometime it lakes of structure.
+Wikipedia is a great collaborative knowledge base but sometimes it lakes of structure.
 This is why in some edge-cases, the crawler didn't do a good job or the data. On the other hand, the data was particularly messy sometimes. For example, we found that for some elections there was more than 1 winner or even none or duplicate candidates. We had to write some test to detect such errors and then we manually fixed them.  
 
 # Part 3 - Data derivation

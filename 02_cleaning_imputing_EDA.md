@@ -61,7 +61,7 @@ The first data quality corrections were already done when extracting the data fr
     <tr>
       <td>is_incumbent</td>
       <td>112</td>
-      <td>if sum of is_incumbent of state/district/year > 0 then assign 0, else 1</td>
+      <td>if grouped sum for state/district/year > 0 then assign 0, else 1</td>
       <td>0</td>
     </tr>
     <tr>
@@ -79,7 +79,7 @@ The first data quality corrections were already done when extracting the data fr
     <tr>
       <td>percent</td>
       <td>15</td>
-      <td>calculated with mean of votes from state and district</td>
+      <td>calculated with mean of votes from state district and year</td>
       <td>0</td>
     </tr>
     <tr>
@@ -121,7 +121,7 @@ The first data quality corrections were already done when extracting the data fr
     <tr>
       <td>unemployement_rate</td>
       <td>979</td>
-      <td>We don't have data before 1946. Set to 0</td>
+      <td>replace with mean from state and district</td>
       <td>0</td>
     </tr>
     <tr>
@@ -145,7 +145,7 @@ The first data quality corrections were already done when extracting the data fr
     <tr>
       <td>president_overall_avg_job_approval</td>
       <td>1060</td>
-      <td>Replace with mean from state and district</td>
+      <td>Version 1: replace with mean from state and district. <br>Version 2: model based imputation</td>
       <td>0</td>
     </tr>
     <tr>
@@ -169,8 +169,8 @@ The first data quality corrections were already done when extracting the data fr
     <tr>
       <td>fundraising</td>
       <td>7161</td>
-      <td>Replace with mean from state and district</td>
-      <td>172</td>
+      <td>Version 1: replace with mean from state and district. <br>Version 2: model based imputation</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
