@@ -8,6 +8,8 @@ permalink: /conclusion
 
 <div class="bucket-container"><div class="bucket"><div class="bucket-title"> <div class="text">Solid D</div></div><div class="square-container"><div class="square" id="solid-d"><div class="num"></div></div></div><div class="bucket-numbers">≥95% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely D</div></div><div class="square-container"><div class="square" id="likely-d"><div class="num"></div></div></div><div class="bucket-numbers">≥75% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean D</div></div><div class="square-container"><div class="square" id="lean-d"><div class="num"></div></div></div><div class="bucket-numbers">≥60% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Toss-up</div></div><div class="square-container"><div class="square" id="tossup"><div class="num"></div></div></div><div class="bucket-numbers">&lt;60% both</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean R</div></div><div class="square-container"><div class="square" id="lean-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥60% R</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely R </div></div><div class="square-container"><div class="square" id="likely-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥75% R </div></div><div class="bucket"><div class="bucket-title"> <div class="text">Solid R</div></div><div class="square-container"><div class="square" id="solid-r"><div class="num"></div></div></div><div class="bucket-numbers">≥95% R</div></div></div>
 
+<i style="font-size: 14px;">The intensity of the color indicate the prediction confidence</i>
+
 <style>
 .bucket-container {
   margin-top: 15px;
@@ -191,6 +193,8 @@ svg
 </p>
 
 <br />
+
+The above map represents the geographical distribution of all 435 congressional districts of the 115th United States Congress, according to the last modifications of 2018 Remedial Congressional Districts.  
 
 # Predictions score
 Our final predictions for 2018 data reached an accuracy of 89.89%.  
