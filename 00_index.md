@@ -9,7 +9,79 @@ _Fulvio Di Napoli, Robert Anglberger and Pierre Mary, Group #11_
 
 # Forecasting the race for the House
 
+<div class="bucket-container"><div class="bucket"><div class="bucket-title"> <div class="text">Solid D</div></div><div class="square-container"><div class="square" id="solid-d"><div class="num"></div></div></div><div class="bucket-numbers">≥95% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely D</div></div><div class="square-container"><div class="square" id="likely-d"><div class="num"></div></div></div><div class="bucket-numbers">≥75% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean D</div></div><div class="square-container"><div class="square" id="lean-d"><div class="num"></div></div></div><div class="bucket-numbers">≥60% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Toss-up</div></div><div class="square-container"><div class="square" id="tossup"><div class="num"></div></div></div><div class="bucket-numbers">&lt;60% both</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean R</div></div><div class="square-container"><div class="square" id="lean-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥60% R</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely R </div></div><div class="square-container"><div class="square" id="likely-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥75% R </div></div><div class="bucket"><div class="bucket-title"> <div class="text">Solid R</div></div><div class="square-container"><div class="square" id="solid-r"><div class="num"></div></div></div><div class="bucket-numbers">≥95% R</div></div></div>
+
 <style>
+.bucket-container {
+  margin-top: 15px;
+  display: flex;
+}
+.bucket-container .bucket {
+  width: 55px;
+  margin-right: 10px;
+}
+.bucket-container .bucket-title {
+  font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  letter-spacing: normal;
+}
+.text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: center;
+}
+.square-container {
+  font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  letter-spacing: normal;
+}
+.bucket-container .bucket-numbers {
+  color: #808285;
+  font-size: 12px;
+  font-family: "DecimaMonoPro",monospace;
+  text-align: center;
+  max-width: 130px;
+}
+.square {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  width: 50px;
+  font-family: "DecimaMonoPro",monospace;
+  margin: 0 auto;
+}
+.square#solid-d {
+  background: rgba(69, 170, 242, 1);
+}
+.square#likely-d {
+  background: rgba(69, 170, 242, 0.7);
+}
+.square#lean-d {
+  background: rgba(69, 170, 242, 0.4);
+}
+.square#tossup {
+  background: #eae3eb;
+}
+.square#lean-r {
+  background: rgba(255, 47, 47, 0.4);
+}
+.square#likely-r {
+  background: rgba(255, 47, 47, 0.7);
+}
+.square#solid-r {
+  background: rgba(255, 47, 47, 1);
+}
+.num {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 #container {
   text-align: center;
 }
@@ -36,27 +108,7 @@ _Fulvio Di Napoli, Robert Anglberger and Pierre Mary, Group #11_
 .legend-container {
   margin-top: 15px;
   text-align: center;
-}
-.legend {
-  width: 20px;
-  height: 20px;
-  border-radius: 40px;
-  float: left;
-}
-.d-legend {
-  background: rgba(69, 170, 242, 1);
-}
-.r-legend {
-  background: rgba(255, 47, 47, 1);
-}
-.legend-title {
-  float: left;
-  margin-left: 5px;
-  line-height: 20px;
-}
-.legend-block {
-  padding-right: 10px;
-  display: inline-block;
+  font-weight: 400; font-style: italic;
 }
 </style>
 
@@ -87,12 +139,23 @@ svg.selectAll(".region")
     .attr("class", "region")
     .attr("d", path)
     .style("fill", function(d){
-      if(d.properties.PARTY_AFF=="Democrat") {
-        return `rgba(69, 170, 242, ${d.properties.alpha})`;
-      } else if (d.properties.PARTY_AFF=="Republican") {
-        return `rgba(255, 47, 47, ${d.properties.alpha})`;
+      var alpha = 1;
+      if (d.properties.alpha >= 0.95) {
+        alpha = 1;
+      }
+      else if (d.properties.alpha >= 0.75) {
+        alpha = 0.7;
+      }
+      else if (d.properties.alpha >= 0.60) {
+        alpha = 0.4;
+      }
+
+      if(d.properties.PARTY_AFF=="Democrat" && d.properties.alpha >=0.6) {
+        return `rgba(69, 170, 242, ${alpha})`;
+      } else if (d.properties.PARTY_AFF=="Republican" && d.properties.alpha >=0.6) {
+        return `rgba(255, 47, 47, ${alpha})`;
       } else {
-        return "#efefef";
+        return "#eae3eb";
       }
     })
     .style("stroke", "#000")
@@ -125,24 +188,12 @@ svg
 
 </script>
 
-<div class="legend-container">
-  <div class="legend-block">
-    <div class="legend d-legend"></div> <span class="legend-title">Democrat</span>
-  </div>
-  <div class="legend-block">
-    <div class="legend r-legend"></div> <span class="legend-title">Republican</span>
-  </div>
-
-  <p style="font-weight: 600; font-style: italic;">
-    Our forecast for every district<br />
-    The chance of each candidate winning in all 435 House districts
-  </p>
-</div>
+<p class="legend-container">
+  Our forecast for every district<br />
+  The chance of each candidate winning in all 435 House districts
+</p>
 
 <br />
-
->
->
 
 <p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
 
@@ -196,9 +247,9 @@ Representatives who run for re-election, are more likely to be confirmed. Repres
 
 ### Local vs national-wide factors
 The outcome of votation in each district is influenced by both national-wide and local factors.
-The popularity of the parties in the nation, should be weighted against local factors: in fact, voters decide whether to show up to the polls and whom to support based both on:  
+The popularity of the parties in the nation, should be weighted against local factors: in fact, voters decide whether to show up to the polls and whom to support based both on:
 
-1. which party they want to control Congress  
-2. which of the individual candidates on the ballot they prefer as their representative  
+1. which party they want to control Congress
+2. which of the individual candidates on the ballot they prefer as their representative
 
 Also voters’ turnout could depend on whether or not they will vote to elect their State Governor, or other local elections.
