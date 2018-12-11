@@ -229,16 +229,16 @@ Comparing predictions with actual results:
   </tbody>
 </table>
 
-The plot below shows 435 round markers, one per each congressional district: the position of the markers through the horizontal axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile. The blue or red color of the marker refers to the actual result of the elections: red for a victory of Republicans, blue for Democrats. <br />
-We notice how only two of those mispredictions are actually republicans when we predicted democrats, although the probability for those two is below 70%. On the other hand, 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means that our model is slightly in favor of republicans. If we include the situation before elections and we look at the feature importance we notice how it has a tendency to confirm candidates which are running for re-election. 
+The plot below shows 435 round markers, one per each congressional district: the position of the markers through the horizontal axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile. The blue or red color of the marker refers to the actual result of the elections: red for a victory of Republicans, blue for Democrats. 
 
 ![Modeling](/assets/04/04-Visualizations-PredVSActual.png)
 
-The fact that our simple baseline model has an accuracy of 76.8% tells a lot about partisanship: several districts stick with the same party for long time.  
+We notice how only two of those mispredictions are actually republicans when we predicted democrats, although the probability for those two is below 70%. On the other hand, 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means that our model is slightly in favor of republicans. If we include the situation before elections and we look at the feature importance we notice how it has a tendency to confirm candidates which are running for re-election. 
 
 # Features
 
 As we would expect, some of the electorate behaviors are seen in the data. The incumbent candidates have a great advantage compared to the opponents.  
+The fact that our simple baseline model has an accuracy of 76.8% tells a lot about partisanship: several districts stick with the same party for long time. 
 Some of the interaction terms and engineered features got high scores in the models. For example the `Log10fundraising` and `ownPartisan`.  
 On the other hand, it was surprising to see how some features which we would expect having great importance, were getting a low or not so high score in the models. For example the party of the president and the seats ratio of the candidate's party in the House of representative.  
 In fact, during midterm elections the president usually loses seats in the House of Representative. We have to work to see how to translate in terms of statistical behavior what we know it is a natural electorate behavior.  
