@@ -3,6 +3,8 @@ layout: page
 title: Modeling
 permalink: /modeling
 ---
+> You can download a copy of the code described in this page [here](/assets/notebooks/03_Modeling.ipynb) as an ipython notebook
+
 The main steps we went through for generating our predictions can be split as:  
 
 - Feature engineering
