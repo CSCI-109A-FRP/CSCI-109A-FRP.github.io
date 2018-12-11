@@ -5,7 +5,7 @@ permalink: /
 ---
 <img src="https://www.extension.harvard.edu/sites/extension.harvard.edu/themes/extension/logo.png" alt="Harvard Extension School" style="max-width: 200px;" />
 
-_Fulvio Di Napoli, Robert Anglberger and Pierre Mary, Group #11_
+_Fulvio Di Napoli, Robert Anglberger and Pierre Mary. Group #11, Fall 2018_
 
 # Forecasting the race for the House
 
@@ -196,6 +196,8 @@ svg
 <br />
 
 <p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
+
+<p>Above see the map with a preview of our [conclusions] (https://csci-109a-frp.github.io/conclusion) for the 2018 congressional elections.</p>
 
 # Problem Statement
 
