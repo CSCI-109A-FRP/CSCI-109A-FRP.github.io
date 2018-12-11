@@ -1,0 +1,50 @@
+year;president_elected;president_elected_party;can_be_re_elected
+1824;John Quincy Adams;DR;1
+1828;Andrew Jackson;D;1
+1832;Andrew Jackson;D;0
+1836;Martin Van Buren;D;1
+1840;William Henry Harrison;W;1
+1844;James Polk;D;1
+1848;Zachary Taylor;W;1
+1852;Franklin Pierce;D;1
+1856;James Buchanan;D;1
+1860;Abraham Lincoln;R;1
+1864;Abraham Lincoln;R;0
+1868;Ulysses Grant;R;1
+1872;Ulysses Grant;R;0
+1876;Rutherford Hayes;R;1
+1880;James Garfield;R;1
+1884;Grover Cleveland;D;1
+1888;Benjamin Harrison;R;1
+1892;Grover Cleveland;D;1
+1896;William McKinley;R;1
+1900;William McKinley;R;0
+1904;Theodore Roosevelt;R;1
+1908;William Taft;R;1
+1912;Woodrow Wilson;D;1
+1916;Woodrow Wilson;D;0
+1920;Warren Harding;R;1
+1924;Calvin Coolidge;R;1
+1928;Herbert Hoover;R;1
+1932;Franklin Roosevelt;D;1
+1936;Franklin Roosevelt;D;1
+1940;Franklin Roosevelt;D;1
+1944;Franklin Roosevelt;D;0
+1948;Harry S. Truman;D;1
+1952;Dwight D. Eisenhower;R;1
+1956;Dwight D. Eisenhower;R;0
+1960;John F. Kennedy;D;1
+1964;Lyndon B. Johnson;D;1
+1968;Richard Nixon;R;1
+1972;Richard Nixon;R;0
+1976;Jimmy Carter;D;1
+1980;Ronald Reagan;R;1
+1984;Ronald Reagan;R;0
+1988;George H. W. Bush;R;1
+1992;Bill Clinton;D;1
+1996;Bill Clinton;D;0
+2000;George W. Bush;R;1
+2004;George W. Bush;R;0
+2008;Barack Obama;D;1
+2012;Barack Obama;D;0
+2016;Donald J. Trump;R;1

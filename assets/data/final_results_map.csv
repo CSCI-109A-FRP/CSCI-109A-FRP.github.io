@@ -1,0 +1,436 @@
+state,district,won,won_pred,rel_won_proba,correct_pred
+Alabama,District 1,1,1.0,0.9838622876430815,True
+Alabama,District 2,1,1.0,0.9608869067557236,True
+Alabama,District 3,1,1.0,0.8718584007622417,True
+Alabama,District 4,1,1.0,0.9868637351818439,True
+Alabama,District 5,1,1.0,0.9340457679767568,True
+Alabama,District 6,1,1.0,0.965935547713727,True
+Alabama,District 7,0,0.0,1.0,True
+Alaska,At-Large,1,1.0,0.8599638110869517,True
+Arizona,District 1,0,0.0,0.7714133598376726,True
+Arizona,District 2,0,1.0,0.8498800105263249,False
+Arizona,District 3,0,0.0,0.8433822379203271,True
+Arizona,District 4,1,1.0,0.947997978068466,True
+Arizona,District 5,1,1.0,0.9832987854086435,True
+Arizona,District 6,1,1.0,0.9840039275811063,True
+Arizona,District 7,0,0.0,1.0,True
+Arizona,District 8,1,1.0,0.7740658740845492,True
+Arizona,District 9,0,1.0,0.7020663561086284,False
+Arkansas,District 1,1,1.0,0.9755335536306761,True
+Arkansas,District 2,1,1.0,0.9129819572066419,True
+Arkansas,District 3,1,1.0,0.9718822749932977,True
+Arkansas,District 4,1,1.0,0.9124699175224749,True
+California,District 1,1,1.0,0.987937041917986,True
+California,District 10,1,1.0,0.9029419422252403,True
+California,District 11,0,0.0,0.84117163253943,True
+California,District 12,0,0.0,0.7859287079348652,True
+California,District 13,0,0.0,1.0,True
+California,District 14,0,0.0,0.9761329057735763,True
+California,District 15,0,0.0,0.9718539398519881,True
+California,District 16,0,0.0,0.9990029357163304,True
+California,District 17,0,0.0,0.998560964117166,True
+California,District 18,0,0.0,0.9243262950339184,True
+California,District 19,0,0.0,0.9222639710403052,True
+California,District 2,0,0.0,0.8808894339519963,True
+California,District 20,0,0.0,1.0,True
+California,District 21,1,1.0,0.9213897271914626,True
+California,District 22,1,1.0,0.9392209014141273,True
+California,District 23,1,1.0,0.9756008790338958,True
+California,District 24,0,0.0,0.8418215172331465,True
+California,District 25,0,1.0,0.8939075907885053,False
+California,District 26,0,0.0,0.978501574187385,True
+California,District 27,0,0.0,0.9096995142746742,True
+California,District 28,0,0.0,0.9802177066846884,True
+California,District 29,0,0.0,0.9989971986829878,True
+California,District 3,0,0.0,0.6590099099092137,True
+California,District 30,0,0.0,0.9496463645100356,True
+California,District 31,0,0.0,0.970621871671855,True
+California,District 32,0,0.0,0.9646181181877079,True
+California,District 33,0,0.0,0.9815701215823388,True
+California,District 34,0,0.0,1.0,True
+California,District 35,0,0.0,0.9845489585888227,True
+California,District 36,0,0.0,0.9639871709651098,True
+California,District 37,0,0.0,0.9979733955599572,True
+California,District 38,0,0.0,0.872732477833056,True
+California,District 39,1,1.0,0.9058904092441732,True
+California,District 4,1,1.0,0.8963062183758783,True
+California,District 40,0,0.0,1.0,True
+California,District 41,0,0.0,0.7563824854950083,True
+California,District 42,1,1.0,0.9544432428885273,True
+California,District 43,0,0.0,0.907246924787067,True
+California,District 44,0,0.0,0.9876984265070733,True
+California,District 45,1,1.0,0.9459814630969564,True
+California,District 46,0,0.0,0.8741322336629312,True
+California,District 47,0,0.0,0.8352894351495519,True
+California,District 48,0,1.0,0.9391373820907487,False
+California,District 49,0,1.0,0.9266153453057847,False
+California,District 5,0,0.0,1.0,True
+California,District 50,1,1.0,0.9220824185720984,True
+California,District 51,0,0.0,0.9243219023201303,True
+California,District 52,0,0.0,0.7554976461912958,True
+California,District 53,0,0.0,0.9776837328656744,True
+California,District 6,0,0.0,0.988392314218661,True
+California,District 7,0,0.0,0.9103695590757434,True
+California,District 8,1,1.0,0.9815231435844767,True
+California,District 9,0,0.0,0.9236781817398074,True
+Colorado,District 1,0,0.0,0.9711209639017698,True
+Colorado,District 2,0,0.0,0.9620000790979236,True
+Colorado,District 3,1,1.0,0.9299813777835894,True
+Colorado,District 4,1,1.0,0.9393825241329239,True
+Colorado,District 5,1,1.0,0.9560197875064099,True
+Colorado,District 6,0,1.0,0.948441793961899,False
+Colorado,District 7,0,0.0,0.9376901072900142,True
+Connecticut,District 1,0,0.0,0.9589394355753058,True
+Connecticut,District 2,0,0.0,0.9272214257713144,True
+Connecticut,District 3,0,0.0,0.9758666188419061,True
+Connecticut,District 4,0,0.0,0.9234633629224935,True
+Connecticut,District 5,0,0.0,0.9326827669682651,True
+Delaware,At-Large,0,0.0,0.8196457591003704,True
+Florida,District 1,1,1.0,0.8974837923049832,True
+Florida,District 10,0,0.0,1.0,True
+Florida,District 11,1,1.0,0.9337632061911864,True
+Florida,District 12,1,1.0,0.985855160958223,True
+Florida,District 13,0,0.0,0.6762677963446215,True
+Florida,District 14,0,0.0,1.0,True
+Florida,District 15,1,1.0,0.7422574574572083,True
+Florida,District 16,1,1.0,0.8214162565706308,True
+Florida,District 17,1,1.0,0.6516362778704619,True
+Florida,District 18,1,1.0,0.8815033778197525,True
+Florida,District 19,1,1.0,0.7292937307174404,True
+Florida,District 2,1,1.0,0.8992417825751485,True
+Florida,District 20,0,0.0,1.0,True
+Florida,District 21,0,0.0,1.0,True
+Florida,District 22,0,0.0,0.9180460095135585,True
+Florida,District 23,0,0.0,0.954122417677939,True
+Florida,District 24,0,0.0,1.0,True
+Florida,District 25,1,1.0,0.8127823997322519,True
+Florida,District 26,0,1.0,0.8878911310533213,False
+Florida,District 27,0,1.0,0.7174634986285697,False
+Florida,District 3,1,1.0,0.9760495725298057,True
+Florida,District 4,1,1.0,0.8666167165681072,True
+Florida,District 5,0,0.0,0.9109825466892252,True
+Florida,District 6,1,1.0,0.7672420349235594,True
+Florida,District 7,0,0.0,0.6547731413854113,True
+Florida,District 8,1,1.0,0.8815555570888466,True
+Florida,District 9,0,0.0,0.9801660723342427,True
+Georgia,District 1,1,1.0,0.9838654495671446,True
+Georgia,District 10,1,1.0,0.9868812753660109,True
+Georgia,District 11,1,1.0,0.9866219730909065,True
+Georgia,District 12,1,1.0,0.913527937611986,True
+Georgia,District 13,0,0.0,0.9990251070391549,True
+Georgia,District 14,1,1.0,0.9946225979635321,True
+Georgia,District 2,0,0.0,0.9779124560299248,True
+Georgia,District 3,1,1.0,0.8709390425778168,True
+Georgia,District 4,0,0.0,0.9973498620872249,True
+Georgia,District 5,0,0.0,1.0,True
+Georgia,District 6,0,1.0,0.9842731321399634,False
+Georgia,District 7,1,1.0,0.8344790676252918,True
+Georgia,District 8,1,1.0,1.0,True
+Georgia,District 9,1,1.0,0.9841746895140219,True
+Hawaii,District 1,0,0.0,0.9535992944935484,True
+Hawaii,District 2,0,0.0,0.9990245002658248,True
+Idaho,District 1,1,1.0,0.7295559147786588,True
+Idaho,District 2,1,1.0,0.9821158393842351,True
+Illinois,District 1,0,0.0,0.9785859269507635,True
+Illinois,District 10,0,0.0,0.9368947728901232,True
+Illinois,District 11,0,0.0,0.6853542114666686,True
+Illinois,District 12,1,1.0,0.9015415124433375,True
+Illinois,District 13,1,1.0,0.878053924590745,True
+Illinois,District 14,0,1.0,0.9004132217586157,False
+Illinois,District 15,1,1.0,0.9787131058603591,True
+Illinois,District 16,1,1.0,0.9524957992936898,True
+Illinois,District 17,0,0.0,0.9756728370722344,True
+Illinois,District 18,1,1.0,0.9778288246349196,True
+Illinois,District 2,0,0.0,0.9697412106122162,True
+Illinois,District 3,0,0.0,0.9749078720426526,True
+Illinois,District 4,0,0.0,0.7951583008207533,True
+Illinois,District 5,0,0.0,0.9688447311911872,True
+Illinois,District 6,0,1.0,0.8841940196522173,False
+Illinois,District 7,0,0.0,0.9874100495367764,True
+Illinois,District 8,0,0.0,0.9702300723263574,True
+Illinois,District 9,0,0.0,0.8448812534165231,True
+Indiana,District 1,0,0.0,0.9759424295843575,True
+Indiana,District 2,1,1.0,0.9009852649327356,True
+Indiana,District 3,1,1.0,0.8929301726824164,True
+Indiana,District 4,1,1.0,0.9540417717247827,True
+Indiana,District 5,1,1.0,0.9843172550686111,True
+Indiana,District 6,1,1.0,0.9831741436496634,True
+Indiana,District 7,0,0.0,0.9990084556989564,True
+Indiana,District 8,1,1.0,0.9658244532334617,True
+Indiana,District 9,1,1.0,0.9202565386692495,True
+Iowa,District 1,0,1.0,0.919760542445962,False
+Iowa,District 2,0,0.0,0.9784156716439789,True
+Iowa,District 3,0,1.0,0.9228176224831379,False
+Iowa,District 4,1,1.0,0.8341467880687149,True
+Kansas,District 1,1,1.0,0.8535963321504151,True
+Kansas,District 2,1,1.0,0.8096196521678959,True
+Kansas,District 3,0,1.0,0.9882893819271403,False
+Kansas,District 4,1,1.0,0.9859354276451194,True
+Kentucky,District 1,1,1.0,0.9829671954757654,True
+Kentucky,District 2,1,1.0,0.9841267766668427,True
+Kentucky,District 3,0,0.0,0.9636632074243815,True
+Kentucky,District 4,1,1.0,0.9843909875809574,True
+Kentucky,District 5,1,1.0,0.9868807190768204,True
+Kentucky,District 6,1,1.0,0.858625609318737,True
+Louisiana,District 1,1,1.0,0.962065079162281,True
+Louisiana,District 2,0,0.0,1.0,True
+Louisiana,District 3,1,1.0,0.6959857786265792,True
+Louisiana,District 4,1,1.0,0.8578253229492742,True
+Louisiana,District 5,1,1.0,0.9867480099690498,True
+Louisiana,District 6,1,1.0,0.8273919757248029,True
+Maine,District 1,0,0.0,0.9975918411733564,True
+Maine,District 2,1,1.0,0.9165671095342304,True
+Maryland,District 1,1,1.0,0.8391556200241725,True
+Maryland,District 2,0,0.0,0.9760073968779729,True
+Maryland,District 3,0,0.0,0.9990194630380933,True
+Maryland,District 4,0,0.0,0.9990136119361641,True
+Maryland,District 5,0,0.0,0.9322945747859271,True
+Maryland,District 6,0,1.0,0.890312906196828,False
+Maryland,District 7,0,0.0,0.8337305506284589,True
+Maryland,District 8,0,0.0,0.9398858992808365,True
+Massachusetts,District 1,0,0.0,1.0,True
+Massachusetts,District 2,0,0.0,0.9593786231187963,True
+Massachusetts,District 3,0,0.0,0.9305798732528513,True
+Massachusetts,District 4,0,0.0,1.0,True
+Massachusetts,District 5,0,0.0,0.9758665490178899,True
+Massachusetts,District 6,0,0.0,0.6934670677653793,True
+Massachusetts,District 7,0,0.0,1.0,True
+Massachusetts,District 8,0,0.0,1.0,True
+Massachusetts,District 9,0,0.0,0.8216612271395398,True
+Michigan,District 1,1,1.0,0.8993278073989053,True
+Michigan,District 10,1,1.0,0.9946925622493935,True
+Michigan,District 11,0,1.0,0.7667729325500846,False
+Michigan,District 12,0,0.0,0.8228231118631723,True
+Michigan,District 13,0,0.0,1.0,True
+Michigan,District 14,0,0.0,0.7947696980360417,True
+Michigan,District 2,1,1.0,0.978971264761422,True
+Michigan,District 3,1,1.0,0.899230156560027,True
+Michigan,District 4,1,1.0,0.8831188517632637,True
+Michigan,District 5,0,0.0,0.8353059205191803,True
+Michigan,District 6,1,1.0,0.9230199630895489,True
+Michigan,District 7,1,1.0,0.8888588591756743,True
+Michigan,District 8,0,1.0,0.7291423882735697,False
+Michigan,District 9,0,0.0,0.9830749497141855,True
+Minnesota,District 1,1,1.0,0.6936034834572238,True
+Minnesota,District 2,0,1.0,0.8779983117201302,False
+Minnesota,District 3,0,1.0,0.9451619558271254,False
+Minnesota,District 4,0,0.0,0.976590719869327,True
+Minnesota,District 5,0,0.0,0.9758050668463635,True
+Minnesota,District 6,1,1.0,0.9253381322671257,True
+Minnesota,District 7,0,0.0,0.9974573254731443,True
+Minnesota,District 8,1,1.0,0.6392824905109548,True
+Mississippi,District 1,1,1.0,0.9589138542664657,True
+Mississippi,District 2,0,0.0,1.0,True
+Mississippi,District 3,1,1.0,0.6873722669096801,True
+Mississippi,District 4,1,1.0,0.9759907580716958,True
+Missouri,District 1,0,0.0,0.8972565390540435,True
+Missouri,District 2,1,1.0,0.8344765474876837,True
+Missouri,District 3,1,1.0,0.9947259606289811,True
+Missouri,District 4,1,1.0,0.8954756573781197,True
+Missouri,District 5,0,0.0,0.9758817728604192,True
+Missouri,District 6,1,1.0,0.9846664536303508,True
+Missouri,District 7,1,1.0,0.8441525737742731,True
+Missouri,District 8,1,1.0,0.8910411532797271,True
+Montana,At-Large,1,1.0,0.8589458521457942,True
+Nebraska,District 1,1,1.0,0.9779438089056758,True
+Nebraska,District 2,1,1.0,0.8984678098975035,True
+Nebraska,District 3,1,1.0,0.9122853732396451,True
+Nevada,District 1,0,0.0,0.9990245754880014,True
+Nevada,District 2,1,1.0,0.9868819090056019,True
+Nevada,District 3,0,1.0,0.8569678447998426,False
+Nevada,District 4,0,0.0,0.5425614254083865,True
+New Hampshire,District 1,0,1.0,0.6034642414674954,False
+New Hampshire,District 2,0,0.0,0.9211967105599813,True
+New Jersey,District 1,0,0.0,0.7938032174729065,True
+New Jersey,District 10,0,0.0,0.8803435585649453,True
+New Jersey,District 11,0,1.0,0.6970398546510217,False
+New Jersey,District 12,0,0.0,0.8255892460976968,True
+New Jersey,District 2,0,1.0,0.7441272494558453,False
+New Jersey,District 3,0,1.0,0.8752733931796237,False
+New Jersey,District 4,1,1.0,0.9257706138985429,True
+New Jersey,District 5,0,0.0,0.6516566278788385,True
+New Jersey,District 6,0,0.0,0.722436484932704,True
+New Jersey,District 7,0,1.0,0.9488267219351938,False
+New Jersey,District 8,0,0.0,0.8958257547763961,True
+New Jersey,District 9,0,0.0,0.735694559345184,True
+New Mexico,District 1,0,0.0,0.6784988086083619,True
+New Mexico,District 2,0,1.0,0.7381007607474903,False
+New Mexico,District 3,0,0.0,0.9989853812618634,True
+New York,District 1,1,1.0,0.8920501026484936,True
+New York,District 10,0,0.0,0.9775573263733216,True
+New York,District 11,0,0.0,0.5807941426835822,True
+New York,District 12,0,0.0,0.9662093766545001,True
+New York,District 13,0,0.0,0.8068227905890232,True
+New York,District 14,0,0.0,0.9049104301073341,True
+New York,District 15,0,0.0,0.9723795440488476,True
+New York,District 16,0,0.0,1.0,True
+New York,District 17,0,0.0,1.0,True
+New York,District 18,0,0.0,0.943171130568921,True
+New York,District 19,0,1.0,0.9417583536071851,False
+New York,District 2,1,1.0,0.9016887121483214,True
+New York,District 20,0,0.0,0.8075415637690131,True
+New York,District 21,1,1.0,0.5936201646084792,True
+New York,District 22,0,1.0,0.9163132169559463,False
+New York,District 23,1,1.0,0.938753892278696,True
+New York,District 24,1,1.0,0.908478282766519,True
+New York,District 25,0,1.0,0.9286534067400398,False
+New York,District 26,0,0.0,0.8950478039857485,True
+New York,District 27,1,1.0,0.9295408136476712,True
+New York,District 3,0,0.0,0.7424298323827654,True
+New York,District 4,0,0.0,0.9389210410702039,True
+New York,District 5,0,0.0,1.0,True
+New York,District 6,0,0.0,1.0,True
+New York,District 7,0,0.0,1.0,True
+New York,District 8,0,0.0,1.0,True
+New York,District 9,0,0.0,0.9533127507926934,True
+North Carolina,District 1,0,0.0,0.9787300762497165,True
+North Carolina,District 10,1,1.0,0.9779116941225592,True
+North Carolina,District 11,1,1.0,0.9767751371843175,True
+North Carolina,District 12,0,0.0,0.8922705186691545,True
+North Carolina,District 13,1,1.0,0.994691596846735,True
+North Carolina,District 2,1,1.0,0.9288042325863531,True
+North Carolina,District 3,1,1.0,1.0,True
+North Carolina,District 4,0,0.0,0.9724336164713154,True
+North Carolina,District 5,1,1.0,0.888243807284415,True
+North Carolina,District 6,1,1.0,0.9416105770903083,True
+North Carolina,District 7,1,1.0,0.6329997716012533,True
+North Carolina,District 8,1,1.0,0.9163320141388592,True
+North Carolina,District 9,1,1.0,0.6592987490646555,True
+North Dakota,At-Large,1,1.0,0.7260149238604998,True
+Ohio,District 1,1,1.0,0.9232431975950364,True
+Ohio,District 10,1,1.0,0.9390520117163867,True
+Ohio,District 11,0,0.0,0.9879301184963155,True
+Ohio,District 12,1,1.0,0.8789926667478322,True
+Ohio,District 13,0,0.0,0.9734027426176831,True
+Ohio,District 14,1,1.0,0.8858877575727679,True
+Ohio,District 15,1,1.0,0.9182751557185433,True
+Ohio,District 16,1,1.0,0.8395995507025544,True
+Ohio,District 2,1,1.0,0.9487042079826437,True
+Ohio,District 3,0,0.0,0.9879420740159625,True
+Ohio,District 4,1,1.0,0.9727659470118828,True
+Ohio,District 5,1,1.0,0.9735502984764313,True
+Ohio,District 6,1,1.0,0.9826557253970128,True
+Ohio,District 7,1,1.0,0.8911988442999046,True
+Ohio,District 8,1,1.0,0.9803689202840821,True
+Ohio,District 9,0,0.0,0.9879388826361385,True
+Oklahoma,District 1,1,1.0,0.7302983463757378,True
+Oklahoma,District 2,1,1.0,0.9223911455626653,True
+Oklahoma,District 3,1,1.0,0.9081173497462669,True
+Oklahoma,District 4,1,1.0,0.9947215830915891,True
+Oklahoma,District 5,0,1.0,0.9430798799569806,False
+Oregon,District 1,0,0.0,0.9655925744524975,True
+Oregon,District 2,1,1.0,0.948618388338193,True
+Oregon,District 3,0,0.0,1.0,True
+Oregon,District 4,0,0.0,0.9976685851955923,True
+Oregon,District 5,0,0.0,0.9976831903190214,True
+Pennsylvania,District 1,1,1.0,0.9380561293423426,True
+Pennsylvania,District 10,1,1.0,0.918517080415335,True
+Pennsylvania,District 11,1,1.0,0.9215067989719212,True
+Pennsylvania,District 12,1,1.0,0.8588708116861062,True
+Pennsylvania,District 13,1,1.0,0.7410650825944579,True
+Pennsylvania,District 14,1,1.0,0.7489008300326725,True
+Pennsylvania,District 15,1,1.0,0.9939371662577098,True
+Pennsylvania,District 16,1,1.0,0.9946973450831219,True
+Pennsylvania,District 17,0,0.0,0.5193573580804078,True
+Pennsylvania,District 18,0,0.0,1.0,True
+Pennsylvania,District 2,0,0.0,0.8257694910942993,True
+Pennsylvania,District 3,0,0.0,0.738279938528909,True
+Pennsylvania,District 4,0,1.0,0.6220476208898789,False
+Pennsylvania,District 5,0,1.0,0.9629458946647887,False
+Pennsylvania,District 6,0,1.0,0.6166786346263885,False
+Pennsylvania,District 7,0,1.0,0.7052525071426591,False
+Pennsylvania,District 8,0,0.0,0.8135406907552882,True
+Pennsylvania,District 9,1,1.0,0.7361248087683071,True
+Rhode Island,District 1,0,0.0,0.9378840271151827,True
+Rhode Island,District 2,0,0.0,0.9872799046111183,True
+South Carolina,District 1,0,1.0,0.5371572054349406,False
+South Carolina,District 2,1,1.0,0.9783410427408329,True
+South Carolina,District 3,1,1.0,0.9432640354342433,True
+South Carolina,District 4,1,1.0,0.8182344041902049,True
+South Carolina,District 5,1,1.0,0.9384453846786467,True
+South Carolina,District 6,0,0.0,0.9877611416951626,True
+South Carolina,District 7,1,1.0,0.8956538305140798,True
+South Dakota,At-Large,1,1.0,0.7509639095424593,True
+Tennessee,District 1,1,1.0,0.9749418258744734,True
+Tennessee,District 2,1,1.0,0.780173223237053,True
+Tennessee,District 3,1,1.0,0.9647587145784579,True
+Tennessee,District 4,1,1.0,0.9485831729391158,True
+Tennessee,District 5,0,0.0,0.9990248540227442,True
+Tennessee,District 6,1,1.0,0.9565296988578252,True
+Tennessee,District 7,1,1.0,0.8059639584219329,True
+Tennessee,District 8,1,1.0,0.9166006284097794,True
+Tennessee,District 9,0,0.0,0.9879352655782844,True
+Texas,District 1,1,1.0,0.982820408715374,True
+Texas,District 10,1,1.0,0.9660313277844728,True
+Texas,District 11,1,1.0,0.9941350649568469,True
+Texas,District 12,1,1.0,0.8344479289517444,True
+Texas,District 13,1,1.0,0.9843674995301714,True
+Texas,District 14,1,1.0,0.9840178648041231,True
+Texas,District 15,0,0.0,0.9990082324890011,True
+Texas,District 16,0,0.0,0.733561328838954,True
+Texas,District 17,1,1.0,0.9750629960972391,True
+Texas,District 18,0,0.0,0.9762378132320612,True
+Texas,District 19,1,1.0,0.857820274038308,True
+Texas,District 2,1,1.0,0.753729877037269,True
+Texas,District 20,0,0.0,1.0,True
+Texas,District 21,1,1.0,0.8183314321823796,True
+Texas,District 22,1,1.0,0.9392705136584377,True
+Texas,District 23,1,1.0,0.8795899982126176,True
+Texas,District 24,1,1.0,0.9842838372280261,True
+Texas,District 25,1,1.0,0.9646584228738664,True
+Texas,District 26,1,1.0,0.9769672002883044,True
+Texas,District 27,1,1.0,0.9668921902676263,True
+Texas,District 28,0,0.0,1.0,True
+Texas,District 29,0,0.0,0.9623248980804645,True
+Texas,District 3,1,1.0,0.7235771458069037,True
+Texas,District 30,0,0.0,1.0,True
+Texas,District 31,1,1.0,0.8884219374555237,True
+Texas,District 32,0,1.0,0.9388484998292556,False
+Texas,District 33,0,0.0,0.9785298902129345,True
+Texas,District 34,0,0.0,0.9791573194210258,True
+Texas,District 35,0,0.0,0.9742433873635311,True
+Texas,District 36,1,1.0,0.9398387030246895,True
+Texas,District 4,1,1.0,0.9847027672368802,True
+Texas,District 5,1,1.0,0.7841796325689809,True
+Texas,District 6,1,1.0,0.8414101323668391,True
+Texas,District 7,0,1.0,0.8490271811111003,False
+Texas,District 8,1,1.0,0.9844547013756123,True
+Texas,District 9,0,0.0,1.0,True
+Utah,District 1,1,1.0,0.9873798950818868,True
+Utah,District 2,1,1.0,0.9398629709705266,True
+Utah,District 3,1,1.0,0.8874920177600495,True
+Utah,District 4,0,1.0,0.88322247136286,False
+Vermont,At-Large,0,0.0,0.8259087963551779,True
+Virginia,District 1,1,1.0,0.8292388092223076,True
+Virginia,District 10,0,1.0,0.938810647929143,False
+Virginia,District 11,0,0.0,0.9063442429823098,True
+Virginia,District 2,0,1.0,0.988114373367367,False
+Virginia,District 3,0,0.0,1.0,True
+Virginia,District 4,0,0.0,0.8127771921636873,True
+Virginia,District 5,1,1.0,0.7228076000683052,True
+Virginia,District 6,1,0.0,0.6484848184862443,False
+Virginia,District 7,0,1.0,0.8836493943842374,False
+Virginia,District 8,0,0.0,0.9757937835786751,True
+Virginia,District 9,1,1.0,0.9946910383617396,True
+Washington,District 1,0,0.0,0.6889974063776348,True
+Washington,District 10,0,0.0,0.9878405495888177,True
+Washington,District 2,0,0.0,1.0,True
+Washington,District 3,1,1.0,0.9947178859661658,True
+Washington,District 4,1,1.0,0.9550095911970655,True
+Washington,District 5,1,1.0,0.8666302166227366,True
+Washington,District 6,0,0.0,0.684419840659551,True
+Washington,District 7,0,0.0,0.6916361613525871,True
+Washington,District 8,0,1.0,0.7204028465938509,False
+Washington,District 9,0,0.0,0.9767868891684443,True
+West Virginia,District 1,1,1.0,0.8901914380502547,True
+West Virginia,District 2,1,1.0,0.9454222941397789,True
+West Virginia,District 3,1,1.0,0.6647495800067802,True
+Wisconsin,District 1,1,0.0,0.5145375316699993,False
+Wisconsin,District 2,0,0.0,1.0,True
+Wisconsin,District 3,0,0.0,0.9532694261850713,True
+Wisconsin,District 4,0,0.0,0.949868689583114,True
+Wisconsin,District 5,1,1.0,0.9716683776300059,True
+Wisconsin,District 6,1,1.0,0.8874547373802945,True
+Wisconsin,District 7,1,1.0,0.898719340259429,True
+Wisconsin,District 8,1,1.0,0.929019358523198,True
+Wyoming,At-Large,1,1.0,0.8578025743169844,True
