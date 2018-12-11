@@ -229,8 +229,8 @@ Comparing predictions with actual results:
   </tbody>
 </table>
 
-Looking the actual results we notice how 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means our model is slightly biased towards republicans. Looking at the situation before elections we notice how it has a tendency to confirm candidates which are running for re-election.  <br />
-The plot below shows 435 round markers, one per each congressional district: the position of the markers through the x axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile. The blue or red color of the marker refers to the actual result of the elections: red for a victory of Republicans, blue for Democrats.
+The plot below shows 435 round markers, one per each congressional district: the position of the markers through the horizontal axis, as well as the color intensity, relates to our prediction probability. It goes from left for 100% probability Democrat, to right for 100% probability Republican, with less certain predictions in the middle. The more districts within the same probability interval, the higher the pile. The blue or red color of the marker refers to the actual result of the elections: red for a victory of Republicans, blue for Democrats. <br />
+We notice how only two of those mispredictions are actually republicans when we predicted democrats, although the probability for those two is below 70%. On the other hand, 42 of those 44 mispredictions went from democrats (actual result) to republicans (prediction), this means that our model is slightly in favor of republicans. If we include the situation before elections and we look at the feature importance we notice how it has a tendency to confirm candidates which are running for re-election. 
 
 ![Modeling](/assets/04/04-Visualizations-PredVSActual.png)
 
