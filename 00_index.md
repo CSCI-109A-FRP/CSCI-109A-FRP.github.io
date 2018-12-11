@@ -197,7 +197,7 @@ svg
 
 <p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
 
-<p>Above see the map with a preview of our predictions for the 2018 congressional elections</p>
+<p>Above see the map with a preview of our conclusions for the 2018 congressional elections.</p>
 
 # Problem Statement
 
