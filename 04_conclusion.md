@@ -3,6 +3,11 @@ layout: page
 title: Conclusion
 permalink: /conclusion
 ---
+<p>The map below represents the geographical distribution of all 435 congressional districts of the 115th United States Congress, according to the last modifications of 2018 Remedial Congressional District.<br />
+
+The intensity of the color indicates the prediction confidence.<br />
+
+The red color of a district refers to a predicted victory for Republicans, while the blue color refers to a predicted victory for Democrats.</p>
 
 # Forecasting the race for the House
 

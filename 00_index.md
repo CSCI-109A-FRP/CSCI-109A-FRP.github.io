@@ -197,9 +197,9 @@ svg
 
 <br />
 
-<p>We want to predict the probability for each party to win the 2018 congressional elections and select the one with the highest probability as the winner.</p>
+<p>In this project we want to predict the winning party at the district level for the 2018 congressional Mid-term elections.</p>
 
-Above see the map with a preview of our [conclusions](/conclusion) for the 2018 congressional elections.
+Above see the map with a preview of our [conclusions](/conclusion).
 
 # Problem Statement
 
@@ -225,7 +225,7 @@ Both houses of Congress are currently controlled by the Republican Party, which 
 The Democrats think they can win control of the House of Representatives this year by winning a majority of seats.
 If the Democrats want to take control of the House by having the most seats, they’re going to have to claim at least 23 from the Republicans.
 
-# Challenge
+# Challenges
 
 ## Data quality challenges
 
