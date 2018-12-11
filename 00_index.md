@@ -5,7 +5,7 @@ permalink: /
 ---
 <img src="https://www.extension.harvard.edu/sites/extension.harvard.edu/themes/extension/logo.png" alt="Harvard Extension School" style="max-width: 200px;" />
 
-_Fulvio Di Napoli, Robert Anglberger and Pierre Mary, Group #11_
+_Fulvio Di Napoli, Robert Anglberger and Pierre Mary. Group #11, Fall 2018_
 
 # Forecasting the race for the House
 
