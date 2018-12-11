@@ -132,7 +132,7 @@ The `modelListTrain` is training all models, performing cross-validation through
 
 ## Define test and training data
 
-We consider our training set on data starting from `yearStart` until before 2018, then test set on 2018 data.  
+We consider our training set on data starting from `yearStart` until before 2018, then test set on 2018 data.  After checking different options and looking at the impact on cross-validation scores, yearStart has been set to 1900.
 
 Then we select for which years we want to perform cross-validation. We take the last ten mid-term elections before 2018, so: 2014, 2010, 2006, 2002, 1998, 1994, 1990, 1986, 1982, 1978.  
 
@@ -206,9 +206,7 @@ That last score type is the one we aim to optimize, as our purpose is to predict
 
 As random forest is our best model, we select features using the `var_sel_RF_2` function, which is a slight variation of the `var_sel_RF` function from the EDA phase. The main difference is that we don't need to split the dataset inside the function but we provide the datasets directly as inputs.  
 
-Here we run feature importance taking 2018 data as test set and all remaining years as training:  
-
-Now we see at feature importance for each fold from `Midterm_recent_years` and then show their values for each year and the averages.  
+Here we run feature importance for each fold from Midterm_recent_years and then show their averages: 
 
 ![Modeling](/assets/03/03_featureImportance.png)
 
