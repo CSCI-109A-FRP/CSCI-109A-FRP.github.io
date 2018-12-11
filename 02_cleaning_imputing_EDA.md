@@ -1,6 +1,6 @@
 ---
 layout: page
-title: EDA
+title: Exploratory Data Analysis
 permalink: /eda
 ---
 
