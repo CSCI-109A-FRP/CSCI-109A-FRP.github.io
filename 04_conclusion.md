@@ -4,7 +4,81 @@ title: Conclusion
 permalink: /conclusion
 ---
 
+# Forecasting the race for the House
+
+<div class="bucket-container"><div class="bucket"><div class="bucket-title"> <div class="text">Solid D</div></div><div class="square-container"><div class="square" id="solid-d"><div class="num"></div></div></div><div class="bucket-numbers">≥95% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely D</div></div><div class="square-container"><div class="square" id="likely-d"><div class="num"></div></div></div><div class="bucket-numbers">≥75% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean D</div></div><div class="square-container"><div class="square" id="lean-d"><div class="num"></div></div></div><div class="bucket-numbers">≥60% D</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Toss-up</div></div><div class="square-container"><div class="square" id="tossup"><div class="num"></div></div></div><div class="bucket-numbers">&lt;60% both</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Lean R</div></div><div class="square-container"><div class="square" id="lean-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥60% R</div></div><div class="bucket"><div class="bucket-title"> <div class="text">Likely R </div></div><div class="square-container"><div class="square" id="likely-r"><div class="num"> </div></div></div><div class="bucket-numbers">≥75% R </div></div><div class="bucket"><div class="bucket-title"> <div class="text">Solid R</div></div><div class="square-container"><div class="square" id="solid-r"><div class="num"></div></div></div><div class="bucket-numbers">≥95% R</div></div></div>
+
 <style>
+.bucket-container {
+  margin-top: 15px;
+  display: flex;
+}
+.bucket-container .bucket {
+  width: 55px;
+  margin-right: 10px;
+}
+.bucket-container .bucket-title {
+  font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  letter-spacing: normal;
+}
+.text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  text-align: center;
+}
+.square-container {
+  font-family: AtlasGrotesk,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  letter-spacing: normal;
+}
+.bucket-container .bucket-numbers {
+  color: #808285;
+  font-size: 12px;
+  font-family: "DecimaMonoPro",monospace;
+  text-align: center;
+  max-width: 130px;
+}
+.square {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 14px;
+  width: 50px;
+  font-family: "DecimaMonoPro",monospace;
+  margin: 0 auto;
+}
+.square#solid-d {
+  background: rgba(69, 170, 242, 1);
+}
+.square#likely-d {
+  background: rgba(69, 170, 242, 0.7);
+}
+.square#lean-d {
+  background: rgba(69, 170, 242, 0.4);
+}
+.square#tossup {
+  background: #eae3eb;
+}
+.square#lean-r {
+  background: rgba(255, 47, 47, 0.4);
+}
+.square#likely-r {
+  background: rgba(255, 47, 47, 0.7);
+}
+.square#solid-r {
+  background: rgba(255, 47, 47, 1);
+}
+.num {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 #container {
   text-align: center;
 }
@@ -27,6 +101,11 @@ permalink: /conclusion
   pointer-events: none;
   border-radius:5px;
   transition: .2s;
+}
+.legend-container {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 400; font-style: italic;
 }
 </style>
 
@@ -57,12 +136,23 @@ svg.selectAll(".region")
     .attr("class", "region")
     .attr("d", path)
     .style("fill", function(d){
-      if(d.properties.PARTY_AFF=="Democrat") {
-        return `rgba(69, 170, 242, ${d.properties.alpha})`;
-      } else if (d.properties.PARTY_AFF=="Republican") {
-        return `rgba(255, 47, 47, ${d.properties.alpha})`;
+      var alpha = 1;
+      if (d.properties.alpha >= 0.95) {
+        alpha = 1;
+      }
+      else if (d.properties.alpha >= 0.75) {
+        alpha = 0.7;
+      }
+      else if (d.properties.alpha >= 0.60) {
+        alpha = 0.4;
+      }
+
+      if(d.properties.PARTY_AFF=="Democrat" && d.properties.alpha >=0.6) {
+        return `rgba(69, 170, 242, ${alpha})`;
+      } else if (d.properties.PARTY_AFF=="Republican" && d.properties.alpha >=0.6) {
+        return `rgba(255, 47, 47, ${alpha})`;
       } else {
-        return "#efefef";
+        return "#eae3eb";
       }
     })
     .style("stroke", "#000")
@@ -94,6 +184,11 @@ svg
 });
 
 </script>
+
+<p class="legend-container">
+  Our forecast for every district<br />
+  The chance of each candidate winning in all 435 House districts
+</p>
 
 <br />
 

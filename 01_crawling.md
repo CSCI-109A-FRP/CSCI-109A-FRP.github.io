@@ -3,6 +3,9 @@ layout: page
 title: Data Crawling
 permalink: /data-crawling
 ---
+
+> You can download a copy of the code described in this page [here](/assets/notebooks/01_crawler.ipynb) as an ipython notebook
+
 # Part 1 - Data crawling
 
 The first challenge in order to predict the 2018 house results was to obtain publically available historical data from various public sources. These data are:  
@@ -12,8 +15,6 @@ The first challenge in order to predict the 2018 house results was to obtain pub
 - Presidental job approval
 - House seats repartition
 - Candidate fundraising
-
-You can find the complete code for this step on the GitHub repository, [harvard_E-109A_final/01_crawler.ipynb](https://github.com/pmary/harvard_E-109A_final/blob/master/01_crawler.ipynb)
 
 ## 1.1 Historical congressional election results
 We got the midterm house results by crawling two sources: [Wikipedia.org](https://wikipedia.org) and [ballotpedia.org](https://ballotpedia.org).
