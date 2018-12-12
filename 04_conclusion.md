@@ -241,7 +241,7 @@ As we would expect, some of the electorate behaviors are seen in the data. The i
 The fact that our simple baseline model has an accuracy of 76.8% tells a lot about partisanship: several districts stick with the same party for long time. 
 Some of the interaction terms and engineered features got high scores in the models. For example the `Log10fundraising` and `ownPartisan`.  
 On the other hand, it was surprising to see how some features which we would expect having great importance, were getting a low or not so high score in the models. For example the party of the president and the seats ratio of the candidate's party in the House of representative.  
-In fact, during midterm elections the president usually loses seats in the House of Representative. We have to work to see how to translate in terms of statistical behavior what we know it is a natural electorate behavior.  
+In fact, during midterm elections the president usually loses seats in the House of Representative. Deriving a feature with the actual representative's party in each district could have improved to highlight this behavior also in our model.
 The data quality and collinearity of some features have certainly a big impact over those ones.  
 After having ran several different configurations, we saw how dropping some collinear features like `first_time_elected` or `count_victories` could bring to a more neutral model, but reduced the cross-validation scores overall.  
 
