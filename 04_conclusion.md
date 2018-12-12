@@ -3,7 +3,7 @@ layout: page
 title: Conclusion
 permalink: /conclusion
 ---
-<p>The map below represents the geographical distribution of all 435 congressional districts of the 115th United States Congress, according to the last modifications of 2018 Remedial Congressional District.<br />
+<p>The map below represents the geographical distribution of all 435 congressional districts of the 116th United States Congress, according to the last modifications of 2018 Remedial Congressional District<br />
 
 The intensity of the color indicates the prediction confidence.<br />
 
